@@ -1,11 +1,15 @@
 const cardEl = document.querySelectorAll(".card");
 
-console.log(buttonEl, cardEl);
-
 cardEl.forEach(function (card) {
-  console.log(card);
-  const buttonEl = document.querySelector(".qustion");
+  const buttonEl = card.querySelector(".qustion");
+  const loremEl = card.querySelector(".lorem0");
   buttonEl.addEventListener("click", () => {
     card.classList.toggle("hidden-card");
+    loremEl.classList.toggle("lorem0");
+    if (buttonEl.textContent === "-") {
+      buttonEl.textContent = "+";
+    } else {
+      buttonEl.textContent = "-";
+    }
   });
 });

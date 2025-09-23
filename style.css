@@ -1,5 +1,7 @@
 @import "tailwindcss";
-.hidden-card{
-    height: 80px;
-
+.hidden-card {
+  height: 80px;
+}
+.lorem0{
+    display: none;
 }
